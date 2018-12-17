@@ -1,0 +1,51 @@
+.container{
+  width: 80vw;
+  margin: 0 auto;
+  height: 100vh;
+
+}
+
+.page{
+  &__title{
+    text-align: center;
+    color: #fff;
+    margin-top: 10%;
+    font-size: 5rem;
+    font-weight: 200;
+  }
+}
+
+.todo{
+  width: 600px;
+  background-color: #ffffff33;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+
+  &__header{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-image: linear-gradient(-45deg, #ea75ea, #82c7c7);
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 100;
+    & h2{
+      color: #fff;
+
+    }
+    &-add{
+      position: relative;
+    }
+  }
+
+  & input[type="text"]{
+    width: 100%;
+    padding: 1.6rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    // text-transform: uppercase;
+  }
+}

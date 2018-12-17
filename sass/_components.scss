@@ -1,0 +1,35 @@
+ul{
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active{
+  text-decoration: none;
+}
+
+#pulse,
+#pulse2,
+#pulse3{
+  position: absolute;
+  border-radius: 50%;
+}
+
+// #pulse{
+//   top: -3.7rem;
+//   left: -3.8rem;
+//   width: 10rem;
+//   height: 10rem;
+//   background-color: #ffffff;
+//   animation: pulse 3s infinite;
+// }
+
+#pulse2{
+  top: -1.3rem;
+  left: -1.3rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: radial-gradient(#ffffff22, #0000ff33);
+  animation: radius 2s cubic-bezier(1,.37,.28,1.23) 3;
+  border: 1px solid #fff;
+}
