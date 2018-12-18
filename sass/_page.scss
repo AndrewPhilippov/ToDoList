@@ -2,7 +2,6 @@
   width: 80vw;
   margin: 0 auto;
   height: 100vh;
-
 }
 
 .page{
@@ -49,28 +48,48 @@
     outline: none;
     font-size: 1.6rem;
     // text-transform: uppercase;
+    background-color: #ffffff33;
+    transition: all .5s;
+
+    &:focus{
+      background-color: #fff;
+    }
   }
 
   &__list{
 
     &-item{
+      position: relative;
       padding: 1.6rem;
       font-size: 1.6rem;
       text-align: left;
       display: flex;
       justify-content: space-between;
+      overflow-wrap: break-word;
       transition: all .2s;
       &:hover &-edit{
         transform: translateX(1rem); 
         opacity: 1;
       }
+      // Hover effect for underline span
+      // &:hover 
+      // &-underline::after{
+      //   width: 50%;
+      // }
+      // &:hover 
+      // &-underline::before{
+      //   width: 50%;
+      // }
+      &:hover &-underline::after {
+        transform: translateX(-50%) scaleX(1);
+      }
 
       &-text{
-        width: 85%;
+        width: 90%;
       }
 
       &-edit{
-        width: 15%;
+        width: auto;
         height: 100%;
         transform: translateX(2rem); 
         opacity: 0;
@@ -80,10 +99,39 @@
           cursor: pointer;
         }
       }
-
+// Added margin right to edit items here
       &-edit span:not(:last-child){
         margin-right: .5rem;
       }
+// This is Item's bottom line animation on the Item hover
+      // &-underline::before,
+      // &-underline::after{
+      //   content: '';
+      //   position: absolute;
+      //   background-color: #fff;
+      //   bottom: 0;
+      //   height: 1px;
+      //   width: 0%;
+      //   transition: all .2s ease-in-out;
+      // }
+      // &-underline::before{
+      //   left: calc(50%);
+      // }
+      // &-underline::after{
+      //   right: calc(50%);
+      // }
+// Another shorter way to create the same underline effect on Item Hover
+        &-underline::after{
+          content: '';
+          position: absolute;
+          background-color: #fff;
+          bottom: 0;
+          left: 50%;
+          height: 1px;
+          width: calc(100% - 6px);
+          transform: translateX(-50%) scaleX(0);
+          transition: all .2s ease-in-out;
+        }
     }
   }
 }
