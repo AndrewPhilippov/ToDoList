@@ -10,6 +10,7 @@ html {
     // This defines what 1rem is
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
     font-family: 'Lato', sans-serif;
+    color: #333;
 
 //     // @include respond(tab-land) { // width < 1200?
 //         font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
@@ -27,9 +28,10 @@ html {
 body {
     box-sizing: border-box;
     background-image: -webkit-linear-gradient(-45deg, rgba(185, 0, 185, 0.5), rgba(0, 175, 175, 0.5));
-    height: 100%;
+    background-repeat: no-repeat;
 
-    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index:1; 
 
     // @include respond(tab-port) {
     //     padding: 0;
