@@ -1,14 +1,13 @@
 .container{
   width: 80vw;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .page{
   &__title{
     text-align: center;
     color: #fff;
-    margin-top: 10%;
     font-size: 5rem;
     font-weight: 200;
   }
