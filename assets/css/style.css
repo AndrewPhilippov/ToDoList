@@ -90,6 +90,7 @@ a:active {
   .todo__list li:nth-child(2n) {
     background-color: #ffffff20; }
   .todo__list-item {
+    margin-right: auto;
     position: relative;
     padding: 1.6rem;
     font-size: 1.6rem;
@@ -103,14 +104,14 @@ a:active {
       opacity: 1; }
     .todo__list-item:hover .todo__list-item-underline::after {
       transform: translateX(-50%) scaleX(1); }
-    .todo__list-item-text {
-      width: 90%; }
     .todo__list-item-edit {
       width: auto;
       height: 100%;
       transform: translateX(2rem);
       opacity: 0;
-      transition: all .2s; }
+      transition: all .2s;
+      margin-left: auto;
+      padding-right: 1rem; }
       .todo__list-item-edit span {
         cursor: pointer; }
     .todo__list-item-edit span:not(:last-child) {

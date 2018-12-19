@@ -2,13 +2,13 @@
 $('input[type="text"]').css('display', 'none');
 
 // Line through on click event
-$('ul').on('click', '.todo__list-item-text', function(){
+$('ul').on('click', 'li', function(){
   $(this).toggleClass('completed');
 });
 
 // Line through on click with check icon
 $('ul').on('click', '.check-item', function(){
-  $(this).parent().siblings('.todo__list-item-text').toggleClass('completed');
+  $(this).parent().siblings('li').toggleClass('completed');
 });
 
 // Delete Item
