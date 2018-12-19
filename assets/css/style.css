@@ -87,6 +87,8 @@ a:active {
     transition: all .5s; }
     .todo input[type="text"]:focus {
       background-color: #fff; }
+  .todo__list li:nth-child(2n) {
+    background-color: #ffffff20; }
   .todo__list-item {
     position: relative;
     padding: 1.6rem;

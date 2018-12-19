@@ -58,6 +58,10 @@
 
   &__list{
 
+    & li:nth-child(2n){
+      background-color: #ffffff20;
+    }
+
     &-item{
       position: relative;
       padding: 1.6rem;
